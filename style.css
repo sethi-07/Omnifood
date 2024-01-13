@@ -476,12 +476,65 @@ line-height: 1.6;
 {
   overflow: hidden;}
 
+
+  .pricing{
+    margin-top: 5.2rem;
+  }
   .plans{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    margin-top: 4.8rem;
+    gap:8rem;
   }
 
   .planitems{
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    font-size: 2rem;
+    margin-bottom: 3rem;
   }
 
+  .plan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.8rem;
+   padding: 0 4.6rem;
+   
+   width:70%;
+   background-color: #fdf2e9;
+  }
+ 
+
+  .planprice{
+    font-size: 4rem;
+    margin-bottom: 1.4rem;
+  }
+  
+  .planpermeal{
+    color: #777;
+    font-size:1.2rem;
+    margin-bottom: 3.6rem;
+  }
+
+  .plantype{
+    margin-top: 5.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .planitem
+  {
+    display: flex;
+    align-items: center;
+    gap:8px;
+    
+  }
+
+  .cross{color:#cf711f}
+
+  .plan1{justify-self: end;
+  background-color: transparent;
+  border: 2px solid #fdf2e9
+}
