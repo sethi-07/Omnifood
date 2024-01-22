@@ -27,12 +27,26 @@ body{
   padding: 0 2rem;
 }
 
+@media(max-width: 1200px)
+{
+  .hero{
+    background-color: #51cf66;
+  }
+}
+
+@media(max-width: 600px)
+{
+  .hero{
+    background-color: #6651cf;
+  }
+}
+
 .heroimg{
   width: 100%
 }
 
 .primhead{
-  font-size: 6.2rem;
+  font-size: 5.2rem;
   font-weight: 700;
   line-height: 1.05;
   color:#333333;
@@ -677,8 +691,7 @@ font-size: 3rem;
   display: grid;
 grid-template-columns: 1.5fr 1.5fr repeat(3,1fr);
   gap:6.2rem;
-  justify-content: space-between;
-  
+  justify-content: space-between;  
 }
 
 .footitems{
@@ -691,12 +704,13 @@ grid-template-columns: 1.5fr 1.5fr repeat(3,1fr);
 .social{
   display:flex;
   gap: 2rem;
+  
 }
 
 .socialicon{
  
   color: #777;
-  font-size: 2rem;
+  font-size: 2.6rem;
 }
 
 .about{
@@ -707,33 +721,37 @@ gap:3.8rem;
 .about p{
   color:#777;
   font-size: 1.4rem;
-}
-.contact{
-  display: flex;
-  flex-direction: column;
-  gap:2rem;
-  font-size: 1.44rem;
+  line-height: 1.5;
 }
 
-.contact p{
-  line-height: 2;
-  color: #333;
-
+.contact .footitem{
+  color:#333;
+  
 }
+
 
 .footitem{
   color:#777;
   font-size:1.5rem;
 }
 
-
-
- .acc h2, .comp h2, .resc h2{
+.acc h2, .comp h2, .resc h2, .contact h2{
   font-size: 2rem;
   font-weight: 500;
   margin-bottom: 3.8rem;
   gap:2rem;
+  color: #333;
 }
+
+.moredetails .footitem{
+  color:#777;
+}
+
+.moredetails .footitem:hover{
+  color:#333;
+  transition: all .9s;
+}
+
 
 .footer{
   margin-bottom: 9.6rem;
@@ -750,3 +768,6 @@ gap:3.8rem;
 
 }
 
+.contact{
+  line-height: 2.4rem;
+}
