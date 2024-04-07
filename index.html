@@ -20,19 +20,26 @@
 </head>
 <body>
 
-  <header class = "head">
+  <header class = "head"> <!--navopen-->
    <img class = "logo" alt = "Omnifood logo" src = "content/img/omnifood-logo.png">
 
    <nav class = "navbar">
     <ul class = "navlist">
-      <li><a href = "#" class = "navlink">Section1</a></li>
-      <li><a href = "#" class = "navlink">Section1</a></li>
-      <li><a href = "#" class = "navlink">Section1</a></li>
-      <li><a href = "#" class = "navlink">Section1</a></li>
-      <li><a href = "#" class = "navlink but">Section1</a></li>
+      <li><a href = "#" class = "navlink">How It Works</a></li>
+      <li><a href = "#" class = "navlink">Meals</a></li>
+      <li><a href = "#" class = "navlink">Testimonials</a></li>
+      <li><a href = "#" class = "navlink">Pricing</a></li>
+      <li><a href = "#" class = "navlink but">Try for free</a></li>
     </ul>
    </nav>
+   
   </header>
+   <!--
+<button class = "navbtn">
+<ion-icon class = "navicon" name="menu-outline"></ion-icon>
+<ion-icon class = "closenav" name="close-outline"></ion-icon>
+</button>
+   -->
 
   <section class = "herosec">
     <div class = "hero">
@@ -72,9 +79,9 @@
 
     
     <div class = "heroimgbox">
-
       <img src = "content/img/hero.png" class = "heroimg" alt = "food">
     </div>
+
   </div>
 
   </section>
@@ -99,7 +106,8 @@
   <!--HOW IT WORKS-->
   <section class = "how" >
   <div class = "container">
-    <span class = "subhead">HOW IT WORKS</span><h2 class = "sechead">Your daily dose of health in 3 simple steps</h2>
+    <span class = "subhead">HOW IT WORKS</span>
+    <h2 class = "sechead">Your daily dose of health in 3 simple steps</h2>
   </div>
    <br>
    <br>
@@ -120,9 +128,6 @@
       <div class = "imgs">
         <img src = "content/img/app/app-screen-1.png" class = "img">
       </div>
-
-
-
 
       <!--
         STEP 2
@@ -180,8 +185,6 @@
   <p class = "sechead">Omnifood AI chooses from 5,000+ recipes</p>
 
   <div class = "mealgrid">
-  
-    <!------------------------->
     <div class = "sample">
 
     <div class = "mealimg">
@@ -206,9 +209,6 @@
     
       </div>
     </div> 
-
-  
-   <!------------------------->
 
    <div class = "sample">
 
@@ -255,16 +255,12 @@
     <ul class = "dietitems">
    <li class = dietitem><ion-icon class = "check" name="checkmark-outline"></ion-icon>Vegetarian</li>
    <li class = dietitem><ion-icon class = "check" name="checkmark-outline"></ion-icon>Vegan</li>
-   <li class = dietitem>  <ion-icon class = "check" name="checkmark-outline"></ion-icon>Pescatarian</li>
-   <li class = dietitem>
-    <ion-icon class = "check" name="checkmark-outline"></ion-icon>Gluten-free</li>
-   <li class = dietitem>
-    <ion-icon class = "check" name="checkmark-outline"></ion-icon>Lactose-free</li>
-   <li class = dietitem>
-    <ion-icon class = "check" name="checkmark-outline"></ion-icon>Keto</li>
-   <li class = dietitem> <ion-icon class = "check" name="checkmark-outline"></ion-icon>Paleo</li>
-   <li class = dietitem><ion-icon class = "check" name="checkmark-outline"></ion-icon>Low FODMAP
-  </li>
+   <li class = dietitem><ion-icon class = "check" name="checkmark-outline"></ion-icon>Pescatarian</li>
+   <li class = dietitem><ion-icon class = "check" name="checkmark-outline"></ion-icon>Gluten-free</li>
+   <li class = dietitem><ion-icon class = "check" name="checkmark-outline"></ion-icon>Lactose-free</li>
+   <li class = dietitem><ion-icon class = "check" name="checkmark-outline"></ion-icon>Keto</li>
+   <li class = dietitem><ion-icon class = "check" name="checkmark-outline"></ion-icon>Paleo</li>
+   <li class = dietitem><ion-icon class = "check" name="checkmark-outline"></ion-icon>Low FODMAP</li>
    <li class = dietitem><ion-icon class = "check" name="checkmark-outline"></ion-icon>Kid-friendly</li>
   
     </ul>
@@ -277,94 +273,107 @@
        <a class = "recipes subhead" href = "#">See all recipes &rarr;</a>
     </div>
     
-     
-
-
-
   </div>
 
 </section>
 
 <!--TESTIMONIALS-->
 <section class = "Testimonials">  
-    
-    
-    
-    <div class = "testimonialcontainer">
-    
+ 
+  <div class = "testimonialcontainer">
       <div class = "testimonial">
+
         <h2 class = "subhead">TESTIMONIALS</h2>
         <p class = "sechead">Once you try it, you can't go back</p>
+
         <div class = "testgrid">
+
           <div class = "customer">
             <img class = "customerphoto" src = "content/img/customers/ben.jpg">
             <blockquote class = "review">The AI algorithm is crazy good, it chooses the right meals for me every time. It's amazing not to worry about food anymore! </blockquote>
             <span>-Ben Hadley</span>
           </div>
+
           <div class = "customer">
             <img class = "customerphoto" src ="content/img/customers/dave.jpg" >
             <blockquote class = "review">Inexpensive, healthy and great-tasting meals, without even having to order manually! It feels truly magical.</blockquote>
             <span>-Dave Bryson</span>
           </div>
+
           <div class = "customer">
             <img class = "customerphoto" src ="content/img/customers/steve.jpg"  >
             <blockquote class = "review">Omnifood is a life saver! I just started a company, so there's no time for cooking. I couldn't live without my daily meals now! 
             </blockquote><span>-Steve Miller</span>
           </div>
+
           <div class = "customer">
             <img class = "customerphoto" src ="content/img/customers/hannah.jpg"  >
             <blockquote class = "review">I got Omnifood for the whole family, and it frees up so much time! Plus, everything is organic and vegan and without plastic. </blockquote>
             <span>-Hannah Smith</span>
           </div>
+
         </div>
         </div>
         
         <div class = "gallery">
+
           <div class = "gallerygrid">
+
             <figure class = "galleryimgs">
-              <img src = "content/img/gallery/gallery-1.jpg" class = "galleryimg">
+            <img src = "content/img/gallery/gallery-1.jpg" class = "galleryimg">
             </figure>
+
               <figure class = "galleryimgs">
-                <img src = "content/img/gallery/gallery-2.jpg" class = "galleryimg">
-                </figure>
+              <img src = "content/img/gallery/gallery-2.jpg" class = "galleryimg">
+              </figure>
+
+              <figure class = "galleryimgs">
+              <img src = "content/img/gallery/gallery-3.jpg" class = "galleryimg">
+              </figure>
+
                 <figure class = "galleryimgs">
-                  <img src = "content/img/gallery/gallery-3.jpg" class = "galleryimg">
-                  </figure>
-                  <figure class = "galleryimgs">
-                    <img src = "content/img/gallery/gallery-4.jpg" class = "galleryimg">
-                    </figure>
-                    <figure class = "galleryimgs">
-                      <img src = "content/img/gallery/gallery-5.jpg" class = "galleryimg">
-                      </figure>
-                      <figure class = "galleryimgs">
-                        <img src = "content/img/gallery/gallery-6.jpg" class = "galleryimg">
-                        </figure>
-                        <figure class = "galleryimgs">
-                          <img src = "content/img/gallery/gallery-7.jpg" class = "galleryimg">
-                          </figure>
-                          <figure class = "galleryimgs">
-                            <img src = "content/img/gallery/gallery-8.jpg" class = "galleryimg">
-                            </figure>
-                            <figure class = "galleryimgs">
-                              <img src = "content/img/gallery/gallery-9.jpg" class = "galleryimg">
-                              </figure>
-                              <figure class = "galleryimgs">
-                                <img src = "content/img/gallery/gallery-10.jpg" class = "galleryimg">
-                                </figure>
-                                <figure class = "galleryimgs">
-                                  <img src = "content/img/gallery/gallery-11.jpg" class = "galleryimg">
-                                  </figure>
-                                  <figure class = "galleryimgs">
-                                    <img src = "content/img/gallery/gallery-12.jpg" class = "galleryimg">
-                                    </figure>
+                <img src = "content/img/gallery/gallery-4.jpg" class = "galleryimg">
+                </figure>
+                    
+                <figure class = "galleryimgs">
+                <img src = "content/img/gallery/gallery-5.jpg" class = "galleryimg">
+                </figure>
+
+                <figure class = "galleryimgs">
+                <img src = "content/img/gallery/gallery-6.jpg" class = "galleryimg">
+                </figure>
+
+                <figure class = "galleryimgs">
+                <img src = "content/img/gallery/gallery-7.jpg" class = "galleryimg">
+                </figure>
+
+                <figure class = "galleryimgs">
+                <img src = "content/img/gallery/gallery-8.jpg" class = "galleryimg">
+                </figure>
+
+                <figure class = "galleryimgs">
+                <img src = "content/img/gallery/gallery-9.jpg" class = "galleryimg">
+                </figure>
+
+                <figure class = "galleryimgs">
+                <img src = "content/img/gallery/gallery-10.jpg" class = "galleryimg">
+                </figure>
+
+                <figure class = "galleryimgs">
+                <img src = "content/img/gallery/gallery-11.jpg" class = "galleryimg">
+                </figure>
+
+                <figure class = "galleryimgs">
+                <img src = "content/img/gallery/gallery-12.jpg" class = "galleryimg">
+                </figure>
               
           </div>
         </div>
       
    
-    </div>
   
   
+      </div>
 </section>
 <!--PRICING SECTION-->
 
@@ -452,13 +461,11 @@
 <!--CTA SECTION-->
 <section class = "cta">
   <div class = "container">
-
     <div class = "ctagrid">
-
       <div class = "ctareg">
         <p class = "sechead">Get your first meal for free!</p>
         <p class = "ctatext">Healthy, tasty and hassle-free meals are waiting for you. Start eating well today. You can cancel or pause anytime. And the first meal is on us!</p>
-
+  
         <div class = "formgrid">
           
             <div  class = "detail">
@@ -470,7 +477,7 @@
               <label class = "details">Email address</label>
               <input class = "input" placeholder = "me@example.com">
             </div>
-
+  
             <div class = "detail">
                 <label class = "details">Where did you hear from us?</label>
                 <select class = "input">
@@ -482,27 +489,27 @@
                    <option>Others</option>
                 </select>
             </div>
-
+  
             <div class = "detail">
              <a href = "#" class = "ctabtn">Sign up now!</a>
             </div>
     
              </div>
         </div>
-        
-     
-      <div class = "ctaimg">
-      <img src = "content/img/eating.jpg">
-      </div>
+  
+        <div class = "ctaimg">
+        </div>
     </div>
+  
     
   </div>
 </section>
 
 <!--SECTION FOOTER-->
 <section class = "footer">
-  
+
   <div class = "container">
+    
     <div class = "footcontent">
 
       <div class = "about">
@@ -568,3 +575,8 @@
 
 </body>
 </html>
+
+
+<!--
+
+-->

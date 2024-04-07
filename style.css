@@ -13,37 +13,28 @@ html{
 }
 
 body{
-  
+}
+/*.navbtn{
+  display: none;
+  border:none;
+  background: none;
+  cursor: pointer;
 }
 
-.hero
-{
-  max-width: 130rem; 
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  margin: 0px auto;
-  gap: 9.6rem;
-  padding: 0 2rem;
+.navicon{
+  height:4.8rem;
+  width:4.8rem;
+  color:#333
 }
+.closenav{
+  display: none;
+}
+*/
 
-@media(max-width: 1200px)
-{
-  .hero{
-    background-color: #51cf66;
-  }
-}
-
-@media(max-width: 600px)
-{
-  .hero{
-    background-color: #6651cf;
-  }
-}
 
 .heroimg{
-  width: 100%
-}
+  width: 100%;
+  }
 
 .primhead{
   font-size: 5.2rem;
@@ -62,7 +53,6 @@ body{
 .herosec{
   padding: 10rem 0;
   background-color:#fef5ea;
-  
 }
 
 .btn{
@@ -104,7 +94,6 @@ a{
 .customface{
   display: flex;
   margin-top: 8rem;
- 
 }
 
 .face{
@@ -459,32 +448,18 @@ line-height: 1.6;
   margin-bottom: 7.2rem;
 }
 
-.gallerygrid{
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap:1.6rem;
-  width:100%;
-  
-}
+
 .galleryimg{
   width:100%;
 }
 
-.testimonialcontainer{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap:2rem;
-  margin:2rem;
-  padding: 1.6rem 0;
- 
-}
+
 
 .galleryimgs img{
   display: block;
 }
 
 .Testimonials{
-  
   background-color: #fef5ea;
 }
 
@@ -495,11 +470,11 @@ line-height: 1.6;
 }
 .galleryimgs
 {
-  overflow: hidden;}
+  overflow: hidden;
+}
 
   .pricing{
-    margin-top: 5.2rem;
-    margin-bottom: 5.2rem;
+    margin: 5.2rem 1rem
   }
   .plans{
     display: grid;
@@ -566,6 +541,7 @@ line-height: 1.6;
   display: flex;
   line-height: 2.6rem;
   gap:6.4rem;
+  padding: 10px;
 }
 
 .featuretext{
@@ -591,6 +567,7 @@ font-size: 3rem;
   display: block;
 }
 
+
 .info{
   margin-bottom: 8rem;
   text-align: center;
@@ -599,27 +576,8 @@ font-size: 3rem;
 }
 
 /*-------------------------------------------------------------------*/
-.ctagrid{
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  background-color: #e67e22;
-  border-radius: 1rem;
-  box-shadow: 0 4rem 4.8rem rgba(0,0,0,0.2);
-  background-image: linear-gradient( to right bottom, #eb984e,#e67e22 );
-  height: 50rem;
- 
-}
-.ctareg{
-  padding: 2rem;
-  width:100%;
-  width:68rem;
-  display: flex;
-  flex-direction: column;
-  gap:4rem;
- margin: 0 auto;
- justify-content: center;
- 
-}
+
+
 .details{
   color:#45260a;
 }
@@ -643,13 +601,7 @@ font-size: 3rem;
   
 }
 
-.formgrid{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  column-gap: 3.2rem;
-  row-gap: 2.4rem;
-  
-}
+
 
 .detail{
   display: flex;
@@ -657,13 +609,11 @@ font-size: 3rem;
   gap:1rem;
 }
 
-.ctaimg img{
-  width: 100%;
+.ctaimg{
+  background-image: url('./content/img/eating.jpg');
+  background-size: cover;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
-  background-image: linear-gradient( to right bottom, #eb984e,#e67e22), url(/content/img/eating.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
 .ctareg .sechead{
@@ -685,13 +635,16 @@ font-size: 3rem;
 
 .cta{
   margin-bottom: 12.6rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
+/*------------------------------------------------------------------------------------------------------FOOTER----------------------------*/
 .footcontent{
   display: grid;
-grid-template-columns: 1.5fr 1.5fr repeat(3,1fr);
+  grid-template-columns: 1.5fr 1.5fr repeat(3,1fr);
   gap:6.2rem;
-  justify-content: space-between;  
+  padding:5rem;
 }
 
 .footitems{
@@ -708,7 +661,7 @@ grid-template-columns: 1.5fr 1.5fr repeat(3,1fr);
 }
 
 .socialicon{
- 
+
   color: #777;
   font-size: 2.6rem;
 }
@@ -756,7 +709,6 @@ gap:3.8rem;
 .footer{
   margin-bottom: 9.6rem;
   border-top:1px solid #d2d2d2;
-  padding: 15rem;
 }
 
 .about img{
@@ -770,4 +722,261 @@ gap:3.8rem;
 
 .contact{
   line-height: 2.4rem;
+}
+
+.ctagrid{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: #e67e22;
+  border-radius: 1rem;
+  box-shadow: 0 4rem 4.8rem rgba(0,0,0,0.2);
+  background-image: linear-gradient(to right bottom, #eb984e,#e67e22); 
+}
+.ctareg{
+  padding:2rem;
+  display: flex;
+  flex-direction: column;
+  gap:4rem;
+  margin: 0 auto;
+}
+
+.formgrid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+.hero
+{
+  max-width: 130rem; 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: 0px auto;
+  gap: 9.6rem;
+  padding: 0 2rem;
+}
+
+.gallerygrid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:1.6rem;
+}
+
+.testimonialcontainer{
+  max-width: 130rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap:6.4rem;
+  padding: 1.6rem 1.6rem;
+  margin: 0 auto;
+}
+
+@media(max-width: 75em)
+{
+  html{
+    font-size: 56.25%;
+  }
+}
+
+@media(max-width: 60em)
+{
+  html{
+    font-size: 50%;
+  }
+
+  .hero{
+    grid-template-columns: 1fr;
+  }
+  .herotextbox{
+    text-align: center;
+  }
+  .custom{
+    justify-content: center;
+  }
+
+.testimonialcontainer
+{
+  grid-template-columns: 1fr;
+}
+.gallerygrid{
+  grid-template-columns: repeat(6,1fr);
+}
+
+.ctagrid{
+    grid-template-columns: 1fr 1fr;
+    height: 65rem;
+}
+.ctareg
+{ 
+  gap:2rem;
+  width:80%;
+}
+.ctaimg{
+  width:100%;
+}
+.formgrid{
+  grid-template-columns: 1fr;
+  row-gap: 2rem;
+}
+
+.ctareg .sechead{
+  font-size: 3rem;
+  color: #45260a;
+}
+
+}
+
+@media(max-width:49em)
+{
+  .featureitems{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:6rem;
+  }
+  .mealgrid{
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 4rem;
+    column-gap: 4rem;
+  }
+  .diets{
+   display: grid;
+   grid-column: 1 / -1;
+   justify-self: center;
+  }
+  .diethead{font-size: 2.5rem;}
+  .sechead{font-size:4rem ;}
+  .plan{width:100%}
+  .plans{gap:4rem;}
+  .footcontent{
+    grid-template-columns: repeat(3,2fr);
+  }
+  .acc,.comp,.resc
+  {grid-row: 1;
+  grid-column :span 2;
+  }
+   .acc,.comp,.resc
+  {grid-row: 1;
+  grid-column :span 2;
+  }
+ .about,.contact{grid-column :span 3;}
+
+
+.navbtn{
+  display: block;
+}
+
+.navbar{
+  position: absolute;
+  background-color: #ffffff;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100vh;
+  transform: translateX(100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+ /*
+ Hide navigation
+    Cant use display:none as it allows no transition
+    1. Hide it visually
+    2. Make it inaccessible using mouse and keyboard
+    3. Hide it from screen readers
+ */  
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.navopen .navbar{
+  opacity: 1;
+pointer-events: auto;
+visibility: visible;
+transform: translateX(0);
+transition: all 0.3s ease-in;
+}
+.navlist{
+  flex-direction: column;
+  gap:4.8rem;
+}
+
+.navlink:visited,
+.navlink:link{
+  text-decoration: none;
+  font-size: 4rem;
+  font-weight: 500;
+}
+.navopen .navicon{
+  display: none;
+}
+.navopen .closenav{
+  display: block;
+}
+.head{
+  justify-content: center;
+}
+.ctagrid{
+  height:68rem;
+}
+}
+
+@media(max-width:33em)
+{
+  .head{
+    justify-content: center;
+  }
+
+  
+ .ctaimg{
+  height: 60rem;
+  grid-row: 1;
+ }
+.formgrid{
+  gap:1rem;
+}
+
+.ctagrid{
+  grid-template-columns: 1fr;
+  height:120rem;
+}
+
+.mealgrid{
+  grid-template-columns: 1fr;
+}
+.plans{
+  grid-template-columns: 1fr;
+}
+.gallerygrid{
+  grid-template-columns: repeat(4,1fr);
+}
+.herosec{
+  padding: 5rem;
+}
+.stepgrid{
+  grid-template-columns: 1fr;
+}
+.imgs:nth-child(2)
+{
+  grid-row: 1;
+}
+.imgs:nth-child(6)
+{
+  grid-row: 5;
+}
+.imgs{
+  transform: translateY(2.4rem);
+}
+.testgrid{
+  grid-template-columns: 1fr;
+}
+
+.review,.featuretext,.ctatext{
+  font-size: 1.8rem ;
+}
+.info{
+  font-size: 1.5rem;
+}
 }
